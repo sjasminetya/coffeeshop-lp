@@ -1,0 +1,49 @@
+.custom-navbar {
+  height: 110px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-black);
+  padding-left: 15px;
+  margin: 0;
+}
+
+.nav-link-custom {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-grey);
+  margin: 0;
+  padding: 8px 40px !important;
+}
+
+.nav-link-active {
+  font-weight: 700;
+  line-height: 19px;
+  color: var(--color-brown);
+  margin: 0;
+  padding: 8px 40px !important;
+}
+
+.text-login {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-black);
+  margin: 0;
+}
+
+.btn-sign-up {
+  width: 150px;
+  height: 45px;
+  background: var(--color-yellow);
+  border-radius: var(--border-radius-50);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-brown);
+  margin-left: 40px;
+  filter: drop-shadow(0px 6px 20px rgba(255, 186, 51, 0.4));
+}
