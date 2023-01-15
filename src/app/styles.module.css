@@ -262,3 +262,48 @@
 .testi .card-testi .testi-image {
   object-fit: contain;
 }
+
+.testi .slide {
+  padding-top: 82px;
+  width: 100%;
+}
+
+.testi .slide .active-circle-slide {
+  width: 45px;
+  height: 15px;
+  background: var(--color-brown);
+  border-radius: 20px;
+}
+
+.testi .slide .circle-slide {
+  width: 15px;
+  height: 15px;
+  background: var(--color-grey);
+  border-radius: 100%;
+  margin-left: 10px;
+}
+
+.testi .slide .arrow-left {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--color-brown);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.testi .slide .arrow-right {
+  width: 60px;
+  height: 60px;
+  background: var(--color-brown);
+  border: 2px solid var(--color-brown);
+  box-shadow: 0px 14px 44px rgba(14, 20, 34, 0.08);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+}

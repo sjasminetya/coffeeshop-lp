@@ -41,10 +41,16 @@ const Footer = () => {
               <h6>Coffee Shop</h6>
             </div>
             <p className="col-5">{'Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans'}</p>
-            <div className="d-flex">
-              <Image alt="coffee" src={ICONS.FACEBOOK} />
-              <Image alt="coffee" src={ICONS.TWITTER} />
-              <Image alt="coffee" src={ICONS.INSTAGRAM} />
+            <div className="d-flex w-full">
+              <div className="me-2">
+                <Image alt="facebook" src={ICONS.FACEBOOK} />
+              </div>
+              <div className="me-2">
+                <Image alt="twitter" src={ICONS.TWITTER} />
+              </div>
+              <div className="me-2">
+                <Image alt="instagram" src={ICONS.INSTAGRAM} />
+              </div>
             </div>
             <h6 className={styles.copyright}>©2020CoffeeStore</h6>
           </div>

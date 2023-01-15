@@ -2,6 +2,7 @@ import Button from '@/components/elements/Button';
 import Footer from '@/components/elements/Footer';
 import Header from '@/components/elements/Header';
 import Image from '@/components/elements/Image';
+import Title from '@/components/elements/Title';
 import { ICONS, IMAGES } from '@/configs';
 import styles from './styles.module.css';
 
@@ -91,6 +92,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+      <Title title="Coffee Shop" />
       <Header />
       <section className={styles.jumbotron}>
         <div className="container">
@@ -177,13 +179,29 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.testi}>
-        <h1>Loved by Thousands of</h1>
-        <h1>Happy Customer</h1>
-        <p>These are the stories of our customers who have visited us with great pleasure.</p>
-        <div className="d-flex">
-          {dataTesti.map(val => (
-            renderCardTesti(val.image, val.name, val.location, val.testi, val.id)
-          ))}
+        <div className="container">
+          <h1 className="text-center">Loved by Thousands of</h1>
+          <h1 className="text-center">Happy Customer</h1>
+          <p className="text-center">These are the stories of our customers who have visited us with great pleasure.</p>
+          <div className="d-flex">
+            {dataTesti.map(val => (
+              renderCardTesti(val.image, val.name, val.location, val.testi, val.id)
+            ))}
+          </div>
+          <div className={[styles.slide, 'd-flex justify-content-between align-items-center'].join(' ')}>
+            <div className="d-flex">
+              <div className={styles['active-circle-slide']} />
+              <div className={styles['circle-slide']} />
+            </div>
+            <div className="d-flex">
+              <div className={styles['arrow-left']}>
+                <Image alt="arrow left" src={ICONS.ARROWLEFTBRWON} />
+              </div>
+              <div className={styles['arrow-right']}>
+                <Image alt="arrow right" src={ICONS.ARROWRIGHTWHITE} />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <Footer />
