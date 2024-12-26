@@ -1,7 +1,7 @@
 import Button from '@/components/elements/Button';
 import Footer from '@/components/elements/Footer';
 import Header from '@/components/elements/Header';
-import Image from '@/components/elements/Image';
+import Image from 'next/image';
 import Title from '@/components/elements/Title';
 import { ICONS, IMAGES } from '@/configs';
 import styles from './styles.module.css';
@@ -34,7 +34,7 @@ export default function Home() {
 
   const renderSummary = (icon, count, type) => {
     return (
-      <div className="d-flex justify-content-center align-items-center col-4">
+      <div className={['d-flex justify-content-center align-items-center', styles['summary-card']].join(' ')}>
         <div className={styles.icon}>
           <Image alt="user" src={icon} />
         </div>
@@ -103,7 +103,7 @@ export default function Home() {
             <p className="col-lg-5">{'We provide high quality beans, good taste, and healthy meals made by love just for you. Start your day with us for a bigger smile!'}</p>
           </div>
           <Button className={styles['btn-get-started']} title="Get Started" />
-          <div className={[styles.summary, 'row'].join(' ')}>
+          <div className="styles.summary">
             {renderSummary(ICONS.USER, '90+', 'Staff')}
             {renderSummary(ICONS.LOCATION, '30+', 'Stores')}
             {renderSummary(ICONS.LOVE, '800+', 'Customers')}
@@ -142,7 +142,7 @@ export default function Home() {
       <section className={[styles.favorite, 'container'].join(' ')}>
         <h1>Here is People’s Favorite</h1>
         <p>Let’s choose and have a bit taste of poeple’s favorite. It might be yours too!</p>
-        <div className="d-flex justify-content-between w-full">
+        <div className={['d-flex justify-content-between w-full', styles['favorite-card-container']].join(' ')}>
           {renderFavorite(IMAGES.FOOD1, 'Hazelnut Latte', ['HazelnutSyrup', 'Wanilla Whipped Cream', 'Ice / Hot', 'Sliced Banana on Top'], '25.000')}
           {renderFavorite(IMAGES.FOOD2, 'Pinky Promise', ['1 Shot of Coffee', 'Vanilla Whipped Cream', 'Chocolate Biscuits', 'Strawberry Syrup', 'Sliced strawberry on Top'], '30.000')}
           {renderFavorite(IMAGES.FOOD3, 'Chicken Wings', ['Wings', 'Drum Sticks', 'Mayonaise and Lemon', 'Hot Fried', 'Secret Recipe', 'Buy 1 Get 1 only for Dine in'], '40.000')}
@@ -183,7 +183,7 @@ export default function Home() {
           <h1 className="text-center">Loved by Thousands of</h1>
           <h1 className="text-center">Happy Customer</h1>
           <p className="text-center">These are the stories of our customers who have visited us with great pleasure.</p>
-          <div className="d-flex">
+          <div className={['d-flex', styles['testi-card-container']].join(' ')}>
             {dataTesti.map(val => (
               renderCardTesti(val.image, val.name, val.location, val.testi, val.id)
             ))}

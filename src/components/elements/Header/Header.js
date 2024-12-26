@@ -1,12 +1,12 @@
 import { ICONS } from '@/configs';
 import React from 'react';
 import Button from '../Button';
-import Image from '../Image';
+import Image from 'next/image';
 import styles from './styles.module.css';
 
 const Header = () => {
   return (
-    <nav className={['navbar navbar-expand-lg', styles['custom-navbar']].join(' ')}>
+    <nav className="navbar navbar-expand-lg">
       <div className="container">
         <div className="d-flex align-items-center">
           <Image alt="coffee" height={33} src={ICONS.COFFEE} />

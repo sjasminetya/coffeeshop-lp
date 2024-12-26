@@ -1,7 +1,7 @@
 import { ICONS } from '@/configs';
 import React from 'react';
 import Button from '../Button';
-import Image from '../Image';
+import Image from 'next/image';
 import styles from './styles.module.css';
 
 const Footer = () => {
@@ -19,14 +19,12 @@ const Footer = () => {
 
   const renderPromo = () => {
     return (
-      <div className={[styles.promo, 'row px-5'].join(' ')}>
-        <div className="d-flex flex-column justify-content-center col-6">
-          <h1 className="col-7">Check our promo today!</h1>
+      <div className={[styles.promo, 'px-5'].join(' ')}>
+        <div className={['d-flex flex-column justify-content-center', styles['promo-text']].join(' ')}>
+          <h1>Check our promo today!</h1>
           <p>{`Let's`} see the deals and pick yours!</p>
         </div>
-        <div className="d-flex flex-column justify-content-center align-items-end col-6">
-          <Button className={styles['btn-promo']} title="See Promo" />
-        </div>
+        <Button className={styles['btn-promo']} title="See Promo" />
       </div>
     );
   };
@@ -54,10 +52,10 @@ const Footer = () => {
             </div>
             <h6 className={styles.copyright}>©2020CoffeeStore</h6>
           </div>
-          <div className="col col-lg-2">
+          <div className="col-sm-4 col-lg-2">
             {renderCategory('Product', ['Download', 'Pricing', 'Locations', 'Countries', 'Blog'])}
           </div>
-          <div className="col col-lg-2">
+          <div className="col-sm-4 col-lg-2">
             {renderCategory('Engage', ['Coffe Shop ?', 'FAQ', 'About Us', 'Privacy Policy', 'Terms of Service'])}
           </div>
         </div>
