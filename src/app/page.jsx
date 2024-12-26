@@ -103,7 +103,7 @@ export default function Home() {
             <p className="col-lg-5">{'We provide high quality beans, good taste, and healthy meals made by love just for you. Start your day with us for a bigger smile!'}</p>
           </div>
           <Button className={styles['btn-get-started']} title="Get Started" />
-          <div className="styles.summary">
+          <div className={styles.summary}>
             {renderSummary(ICONS.USER, '90+', 'Staff')}
             {renderSummary(ICONS.LOCATION, '30+', 'Stores')}
             {renderSummary(ICONS.LOVE, '800+', 'Customers')}
