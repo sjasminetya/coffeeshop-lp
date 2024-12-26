@@ -30,6 +30,10 @@ const dataTesti = [
   },
 ];
 
+export const metadata = {
+  title: 'Coffee Shop Landing Page',
+};
+
 export default function Home() {
 
   const renderSummary = (icon, count, type) => {
@@ -92,7 +96,6 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Title title="Coffee Shop" />
       <Header />
       <section className={styles.jumbotron}>
         <div className="container">
