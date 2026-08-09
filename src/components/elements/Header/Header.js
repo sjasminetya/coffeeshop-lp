@@ -1,4 +1,3 @@
-import { ICONS } from '@/configs';
 import React from 'react';
 import Button from '../Button';
 import Image from 'next/image';
@@ -9,7 +8,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg">
       <div className="container">
         <div className="d-flex align-items-center">
-          <Image alt="coffee" height={33} src={ICONS.COFFEE} />
+          <Image alt="coffee" width={33} height={33} src="/../../assets/icons/ic-coffee.svg" />
           <h3 className={styles['navbar-brand']}>Coffee Shop</h3>
         </div>
         <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" className="navbar-toggler" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button">
