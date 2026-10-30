@@ -8,7 +8,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg">
       <div className="container">
         <div className="d-flex align-items-center">
-          <Image alt="coffee" width={33} height={33} src="/../../assets/icons/ic-coffee.svg" />
+          <Image alt="coffee" width={33} height={33} src="/assets/icons/ic-coffee.svg" style={{ width: "33px", height: "auto" }} />
           <h3 className={styles['navbar-brand']}>Coffee Shop</h3>
         </div>
         <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" className="navbar-toggler" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button">

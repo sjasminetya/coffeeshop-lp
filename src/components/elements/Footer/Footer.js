@@ -34,19 +34,19 @@ const Footer = () => {
         <div className="row">
           <div className="col">
             <div className="d-flex align-items-center">
-              <Image alt="coffee" src="/../assets/icons/ic-coffee.svg" width={33} height={33} />
+              <Image alt="coffee" src="/assets/icons/ic-coffee.svg" width={33} height={33} style={{ width: "33px", height: "auto" }} />
               <h6>Coffee Shop</h6>
             </div>
             <p className="col-5">{'Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans'}</p>
             <div className="d-flex w-full">
               <div className="me-2">
-                <Image alt="facebook" src="/../assets/icons/ic-facebook.svg" width={33} height={33}/>
+                <Image alt="facebook" src="/assets/icons/ic-facebook.svg" width={33} height={33}/>
               </div>
               <div className="me-2">
-                <Image alt="twitter" src="/../assets/icons/ic-twitter.svg" width={33} height={33} />
+                <Image alt="twitter" src="/assets/icons/ic-twitter.svg" width={33} height={33} />
               </div>
               <div className="me-2">
-                <Image alt="instagram" src="/../assets/icons/ic-instagram.svg" width={33} height={33} />
+                <Image alt="instagram" src="/assets/icons/ic-instagram.svg" width={33} height={33} />
               </div>
             </div>
             <h6 className={styles.copyright}>©2020CoffeeStore</h6>
